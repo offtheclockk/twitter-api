@@ -3,6 +3,7 @@ Api server for twitter clone
 This project is my own take on building Twitter clone, I have tried to keep things simple and concise. With minimal modules needed, it is very lightweight and fast, yet very functional and feature-rich. Three parts of project viz, front-end, database and api server are separately hosted and this repo contains the api code which connects to the front-end app and database.
 
 Things used
+
 Express as an api server
 
 MongoDB as database
@@ -38,6 +39,7 @@ dummy-data/ contains json and script for parsing some pre-populated data
 passport.js passport related config and functions
 app.js main express app.
 This is the overview of what's contained in this repo.
+
 ⚡ Routes ⚡
 Routes are divided into two parts /auth (routes/auth.js) and /api (routes/api.js). As it is inferred /auth contains authentication related sub routes, so user signup is done via POST /auth/signup endpoint and login is done via POST /auth/login. There is also GET /auth/login which returns 200 if user is logged in (has a session up) and is used by front-end code to check for logged-in session. Other routes fall under /api and these include GET /api/home_timeline to get post feed of authenticated user, POST /api/post to create a new post of user authenticated user, GET /api/search for posts related query by the user (not needed to be authenticated) and GET /api/trends to get trending hashtags,etc among others.
 
