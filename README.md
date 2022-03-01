@@ -49,7 +49,7 @@ There is bunch of mongoose models viz `Auth`, `Post`, `Friendship`, `Trend`, `ho
 
 ### Pre_populating 
 
-Some data (tweets and users) is fed into database at server-start to get a bunch of posts in [tclone](https://tclone.netlify.app/) app (data is updated not overwritten). These are actual recent tweets on Twitter and fetched via twitter api and then populated in database. Tweet Model on this project is exactly compatible with Tweet objects returned by Twitter api and this data is read from *dummy_data/home_timeline.json*, which is original return value of twitter api */statuses/home_timeline*. This file can also be filled with any list of valid tweet objects (*models/post.js*) and that data will be _appended_ to database, all of this behavior is controlled by *dummy_data/pre_populate.js* which is invoked upon successful connection to the mongo database.
+Some data (tweets and users) is fed into database at server-start to get a bunch of posts in my twitter clone app (data is updated not overwritten). These are actual recent tweets on Twitter and fetched via twitter api and then populated in database. Tweet Model on this project is exactly compatible with Tweet objects returned by Twitter api and this data is read from *dummy_data/home_timeline.json*, which is original return value of twitter api */statuses/home_timeline*. This file can also be filled with any list of valid tweet objects (*models/post.js*) and that data will be _appended_ to database, all of this behavior is controlled by *dummy_data/pre_populate.js* which is invoked upon successful connection to the mongo database.
 
 ### Trend Analysis 
 
