@@ -35,7 +35,7 @@ utils/
 helpers.js containes some miscellaneous helper utilities like escapeHtml, etc
 mddlewares.js middlewares like ensureLoggedIn
 dummy-data/ contains json and script for parsing some pre-populated data
-passport.js passport related congig and functions
+passport.js passport related config and functions
 app.js main express app.
 This is the overview of what's contained in this repo.
 ⚡ Routes ⚡
