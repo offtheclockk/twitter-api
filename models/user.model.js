@@ -48,12 +48,12 @@ const userSchema = mongoose.Schema(
                     profile_image_url_https: {
                               type: String,
                               default:
-                                        "https://reedbarger.nyc3.digitaloceanspaces.com/default-avatar.png",
+                                        "https://miro.medium.com/max/360/1*W35QUSvGpcLuxPo3SRTH4w.png",
                     },
                     profile_banner: {
                               type: String,
                               default:
-                                        "https://reedbarger.nyc3.digitaloceanspaces.com/twitter-cover.png",
+                                        "https://miro.medium.com/max/1400/0*1FMr4QJ7PwRDnC7w",
                     },
                     profile_banner_url: { type: String, default: null },
                     profile_banner_color: { type: String, default: null },
